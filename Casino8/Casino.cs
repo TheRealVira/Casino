@@ -46,6 +46,7 @@ namespace Casino8
 
         private static (Player, int) Play(this (char, int) move, Player player)
         {
+            player.Setzen(move.Item2);
             try
             {
                 return int.Parse(move.Item1.ToString()) == _rand.Next(8) ? (player, move.Item2 * 7) : (player, 0);

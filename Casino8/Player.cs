@@ -20,19 +20,22 @@ namespace Casino8
                 var steps = new Queue<(char, int)>();
 
                 string line;
-                while ((line = reader.ReadLine()) != "END")
+                while ((line = reader.ReadLine()) != "ENDE")
                 {
                     if (line != null) steps.Enqueue((line.Split(' ')[0][0], int.Parse(line.Split(' ')[1])));
                 }
+
+                Steps = steps;
             }
             
-            IstBleiteGegangen+=OnIstBleiteGegangen;
+            IstBleiteGegangen+= OnEsIstEtwasPassiert;
         }
 
-        private void OnIstBleiteGegangen(DateTime dateTime)
+        private void OnEsIstEtwasPassiert(DateTime dateTime)
         {
             using (var writer = new StreamWriter(_fileName, true))
             {
+                writer.WriteLine();
                 writer.WriteLine($"{dateTime.ToShortDateString()} {dateTime.ToShortTimeString()}Uhr {ToString()}");
             }
         }
@@ -53,10 +56,17 @@ namespace Casino8
         {
             Guthaben += betragToAdd;
 
-            if (Guthaben >= 0) return;
+            if (Guthaben == 0)
+            {
+                IsBleite = true;
+                IstBleiteGegangen?.Invoke(DateTime.Now);
+                return;
+            }
 
-            IsBleite = true;
-            IstBleiteGegangen?.Invoke(DateTime.Now);
+            if (Steps.Count == 0)
+            {
+                OnEsIstEtwasPassiert(DateTime.Now);
+            }
         }
 
         public override string ToString()

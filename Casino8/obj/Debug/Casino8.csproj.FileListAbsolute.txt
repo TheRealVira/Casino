@@ -1,0 +1,9 @@
+C:\Users\Administrator\Desktop\POS_NVS\180912HUderWoche2Casino\Casino8\bin\Debug\Casino8.exe
+C:\Users\Administrator\Desktop\POS_NVS\180912HUderWoche2Casino\Casino8\bin\Debug\Casino8.pdb
+C:\Users\Administrator\Desktop\POS_NVS\180912HUderWoche2Casino\Casino8\bin\Debug\System.ValueTuple.dll
+C:\Users\Administrator\Desktop\POS_NVS\180912HUderWoche2Casino\Casino8\bin\Debug\System.ValueTuple.xml
+C:\Users\Administrator\Desktop\POS_NVS\180912HUderWoche2Casino\Casino8\obj\Debug\Casino8.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\POS_NVS\180912HUderWoche2Casino\Casino8\obj\Debug\Casino8.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\POS_NVS\180912HUderWoche2Casino\Casino8\obj\Debug\Casino8.csproj.CopyComplete
+C:\Users\Administrator\Desktop\POS_NVS\180912HUderWoche2Casino\Casino8\obj\Debug\Casino8.exe
+C:\Users\Administrator\Desktop\POS_NVS\180912HUderWoche2Casino\Casino8\obj\Debug\Casino8.pdb
