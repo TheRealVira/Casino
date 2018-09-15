@@ -1,0 +1,2 @@
+/home/vira/RiderProjects/Casino8/Casino8/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/vira/RiderProjects/Casino8/Casino8/bin/Debug/System.ValueTuple.dll
